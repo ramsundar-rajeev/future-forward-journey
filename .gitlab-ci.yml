@@ -1,0 +1,82 @@
+# --------------------------------------------
+# GitLab CI/CD pipeline for a simple web app
+# Tech stack:
+# - Vite
+# - React
+# - TypeScript
+# - Tailwind / shadcn-ui
+#
+# Goal:
+# 1. Build the app
+# 2. Deploy it to Netlify
+# --------------------------------------------
+
+# Use Node.js because this is a JavaScript project
+image: node:22-alpine
+
+# Define the stages of the pipeline
+# Stages run from top to bottom
+stages:
+  - build
+  - deploy
+
+# --------------------------------------------
+# BUILD STAGE
+# --------------------------------------------
+build_app:
+  stage: build
+
+  script:
+    # Print versions (helps debugging and learning)
+    - echo "Node version:"
+    - node --version
+    - echo "NPM version:"
+    - npm --version
+
+    # Install project dependencies exactly as defined
+    # npm ci is faster and safer than npm install
+    - echo "Installing dependencies..."
+    - npm ci
+
+    # Build the project using Vite
+    - echo "Building the app..."
+    - npm run build
+
+    # Show what files were generated
+    - echo "Build output:"
+    - ls -la dist
+
+  # Save the build output so the next stage can use it
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 hour
+
+# --------------------------------------------
+# DEPLOY STAGE
+# --------------------------------------------
+deploy_to_netlify:
+  stage: deploy
+  when: manual
+
+  # This job needs the build files from the build stage
+  needs:
+    - build_app
+
+  script:
+    # Install Netlify CLI (tool that talks to Netlify)
+    - echo "Installing Netlify CLI..."
+    - npm install -g netlify-cli
+
+    # Check Netlify CLI version
+    - netlify --version
+
+    # Deploy the site
+    # --dir dist     -> folder created by Vite build
+    # --prod         -> deploy to production
+    - echo "Deploying to Netlify..."
+    - netlify deploy --prod --dir=dist
+
+  environment:
+    name: production
+    url: https://rajeevsubbian-gitlab-ram-01.netlify.app/
