@@ -27,10 +27,10 @@ const AboutSection = () => {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Hi! I’m a student with a strong interest in the intersection of science and technology, particularly how biological systems work at a fundamental level and how this knowledge can be applied in real-world contexts. My studies have fuelled a growing curiosity about biotechnology and the role innovation plays in solving complex problems.Hi! I’m a student with a strong interest in the intersection of science and technology, particularly how biological systems work at a fundamental level and how this knowledge can be applied in real-world contexts. My studies have fuelled a growing curiosity about biotechnology and the role innovation plays in solving complex problems.
+              Hi! I'm a student with a strong interest in the intersection of science and technology, particularly how biological systems work at a fundamental level and how this knowledge can be applied in real-world contexts. My studies have fuelled a growing curiosity about biotechnology and the role innovation plays in solving complex problems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I’m motivated by continuous learning and enjoy exploring ideas through research, collaboration, and hands-on projects. Whether I’m experimenting, coding, or developing new skills, I’m always keen to take on challenges that push my understanding further and help me grow.
+              I'm motivated by continuous learning and enjoy exploring ideas through research, collaboration, and hands-on projects. Whether I'm experimenting, coding, or developing new skills, I'm always keen to take on challenges that push my understanding further and help me grow.
             </p>
           </div>
         </div>
