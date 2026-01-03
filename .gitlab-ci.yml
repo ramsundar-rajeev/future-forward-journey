@@ -17,14 +17,25 @@ image: node:22-alpine
 # Define the stages of the pipeline
 # Stages run from top to bottom
 stages:
+  - .pre
   - build
   - deploy
+
+ecs_deploy:
+  stage: .pre
+  image:
+    name: amazon/aws-cli:2.23.0
+    entrypoint: [""]
+  script:
+    - aws --version
+    - aws ecs register-task-definition --cli-input-json file://aws/td-prod.json
 
 # --------------------------------------------
 # BUILD STAGE
 # --------------------------------------------
 build_app:
   stage: build
+  when: manual
 
   script:
     # Print versions (helps debugging and learning)
