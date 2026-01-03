@@ -29,7 +29,7 @@ const HeroSection = () => {
             Ramsundar Rajeev
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-8">
-            Student <span className="text-accent">|</span> Aspiring Scientist <span className="text-accent">|</span> Future Biotechnologist
+            Student <span className="text-accent">|</span> (Early-stage) Computational Scientist <span className="text-accent">|</span> Aspiring Biotechnologist
           </p>
         </div>
         
