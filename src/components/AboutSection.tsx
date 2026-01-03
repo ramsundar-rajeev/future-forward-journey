@@ -27,10 +27,10 @@ const AboutSection = () => {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Hi! I'm a student with a strong interest in the intersection of science and technology, particularly how biological systems work at a fundamental level and how this knowledge can be applied in real-world contexts. My studies have fuelled a growing curiosity about biotechnology and the role innovation plays in solving complex problems.
+              Hi! I'm a student with a strong interest in the intersection of <span className="text-foreground font-medium">science and technology</span>, particularly how <span className="text-foreground font-medium">biological systems</span> work at a fundamental level and how this knowledge can be applied in real-world contexts. My studies have fuelled a growing curiosity about <span className="text-primary font-medium">biotechnology</span> and the role <span className="text-foreground font-medium">innovation</span> plays in solving complex problems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm motivated by continuous learning and enjoy exploring ideas through research, collaboration, and hands-on projects. Whether I'm experimenting, coding, or developing new skills, I'm always keen to take on challenges that push my understanding further and help me grow.
+              I'm motivated by <span className="text-foreground font-medium">continuous learning</span> and enjoy exploring ideas through <span className="text-foreground font-medium">research</span>, <span className="text-foreground font-medium">collaboration</span>, and <span className="text-foreground font-medium">hands-on projects</span>. Whether I'm experimenting, coding, or developing new skills, I'm always keen to take on <span className="text-primary font-medium">challenges</span> that push my understanding further and help me grow.
             </p>
           </div>
         </div>
