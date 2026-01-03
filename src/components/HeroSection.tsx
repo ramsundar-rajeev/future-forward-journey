@@ -28,9 +28,17 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             Ramsundar Rajeev
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-8">
-            Student <span className="text-accent">|</span> (Early-stage) Computational Scientist <span className="text-accent">|</span> Aspiring Biotechnologist
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-lg md:text-xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-8">
+            <span className="px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5">
+              Student
+            </span>
+            <span className="px-4 py-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent">
+              Computational Scientist
+            </span>
+            <span className="px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5">
+              Aspiring Biotechnologist
+            </span>
+          </div>
         </div>
         
         <div className="animate-fade-up delay-300">
