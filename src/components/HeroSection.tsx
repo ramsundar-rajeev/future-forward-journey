@@ -28,14 +28,14 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             Ramsundar Rajeev
           </h1>
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-lg md:text-xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-8">
-            <span className="px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">
+            <span className="px-4 py-1.5 rounded-full border border-blue-400/40 bg-blue-500/15 text-blue-300">
               Student
             </span>
-            <span className="px-4 py-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent">
+            <span className="px-4 py-1.5 rounded-full border border-emerald-400/40 bg-emerald-500/15 text-emerald-300">
               Computational Scientist
             </span>
-            <span className="px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/5">
+            <span className="px-4 py-1.5 rounded-full border border-amber-400/40 bg-amber-500/15 text-amber-300">
               Aspiring Biotechnologist
             </span>
           </div>
