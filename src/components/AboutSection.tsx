@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const AboutSection = () => {
   return (
@@ -9,7 +9,11 @@ const AboutSection = () => {
           <div className="animate-fade-up">
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-secondary flex items-center justify-center shadow-elevated overflow-hidden">
-                <User className="w-24 h-24 md:w-32 md:h-32 text-muted-foreground" />
+                <img 
+                  src={profilePhoto} 
+                  alt="Ramsundar Rajeev" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative ring */}
               <div className="absolute -inset-3 rounded-full border-2 border-primary/20 -z-10" />
