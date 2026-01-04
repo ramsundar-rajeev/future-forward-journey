@@ -97,7 +97,7 @@ ecs_deploy:
     - aws --version
     - aws ecs register-task-definition --cli-input-json file://aws/td-prod.json
     - aws ecs update-service --cluster future-forward-journey-ram-prod --service future-forward-journey-service-Prod --task-definition future-forward-journey-TD-Prod
-    - aws ecs wait services-stable --cluster future-forward-journey-ram-prod --services future-forward-journey-service
+    - aws ecs wait services-stable --cluster future-forward-journey-ram-prod --services future-forward-journey-service-Prod
 
 
 # --------------------------------------------
