@@ -81,7 +81,7 @@ build_docker_image:
     #- docker build -t futureforwardjourney .
     - docker build -t $DOCKER_REGISTRY/futureforwardjourney:$VITE_APP_VERSION -t $DOCKER_REGISTRY/futureforwardjourney .
     - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
-    - docker push $DOCKER_REGISTRY/learngitlabapp:$VITE_APP_VERSION
+    - docker push $DOCKER_REGISTRY/futureforwardjourney:$VITE_APP_VERSION
     #- docker push --all-tags $DOCKER_REGISTRY/futureforwardjourney
 
 # --------------------------------------------
