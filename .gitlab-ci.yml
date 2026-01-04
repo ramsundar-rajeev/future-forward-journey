@@ -96,7 +96,7 @@ ecs_deploy:
   script:
     - aws --version
     - aws ecs register-task-definition --cli-input-json file://aws/td-prod.json
-    - aws ecs update-service --cluster  --service future-forward-journey-TD-Prod-service-uhmr2gbu --task-definition future-forward-journey-TD-Prod
+    - aws ecs update-service --cluster test-for-ram-ecs --service future-forward-journey-TD-Prod-service-uhmr2gbu --task-definition future-forward-journey-TD-Prod
     - aws ecs wait services-stable --cluster test-for-ram-ecs --services future-forward-journey-TD-Prod-service-uhmr2gbu
 
 
