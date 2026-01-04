@@ -32,7 +32,7 @@ const EducationSection = () => {
               The Skinners'
             </p>
             <p className="text-sm text-muted-foreground">
-              Year 12 • 2025-2026
+              Year 12 • 2020-2027
             </p>
           </div>
 
