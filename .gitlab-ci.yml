@@ -29,6 +29,7 @@ ecs_deploy:
   script:
     - aws --version
     - aws ecs register-task-definition --cli-input-json file://aws/td-prod.json
+    - aws ecs update-service --cluster future-forward-journey-ram-prod --service future-forward-journey-service-Prod --task-definition LearnGitLabApp-TD-Prod
 
 # --------------------------------------------
 # BUILD STAGE
