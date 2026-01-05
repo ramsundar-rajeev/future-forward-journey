@@ -1,39 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, Award, Users, Beaker } from "lucide-react";
+import { Calendar, Award } from "lucide-react";
 
 const experiences = [
   {
     id: 1,
-    title: "Regional Science Competition",
-    date: "March 2024",
-    description: "Participated in the regional science fair presenting research on sustainable bio-plastics. Gained valuable experience in public speaking and scientific presentation.",
+    title: "Activity Title",
+    date: "Date",
+    description: "Activity description goes here. This is where you can describe what the activity involved and what you learned from it.",
     icon: Award,
-    tags: ["Science", "Competition", "Research"],
-  },
-  {
-    id: 2,
-    title: "School Science Club Leadership",
-    date: "September 2023 - Present",
-    description: "Elected as Vice President of the school science club. Organized weekly meetings, coordinated experiments, and mentored junior members.",
-    icon: Users,
-    tags: ["Leadership", "Mentoring", "Organization"],
-  },
-  {
-    id: 3,
-    title: "Summer Biology Workshop",
-    date: "July 2023",
-    description: "Attended an intensive two-week biology workshop focusing on molecular biology techniques and laboratory practices.",
-    icon: Beaker,
-    tags: ["Biology", "Workshop", "Lab Skills"],
-  },
-  {
-    id: 4,
-    title: "Community Environmental Initiative",
-    date: "June 2023",
-    description: "Volunteered in a local environmental cleanup and awareness campaign. Helped educate community members about sustainable practices.",
-    icon: Users,
-    tags: ["Volunteering", "Environment", "Community"],
+    tags: ["Tag 1", "Tag 2", "Tag 3"],
   },
 ];
 
