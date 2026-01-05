@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <p className="text-foreground font-semibold mb-1">Your Name</p>
+            <p className="text-foreground font-semibold mb-1">Ramsundar Rajeev</p>
             <p className="text-sm text-muted-foreground">
-              Aspiring Scientist & Future Biotechnologist
+              Curious Student & Future Biotechnologist
             </p>
           </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Ramsundar Rajeev. All rights reserved.
           </p>
         </div>
       </div>
