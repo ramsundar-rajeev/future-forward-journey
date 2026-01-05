@@ -4,7 +4,7 @@ const subjects = [
   { name: "Mathematics", icon: "📐" },
   { name: "Biology", icon: "🧬" },
   { name: "Chemistry", icon: "⚗️" },
-  { name: "Physics", icon: "⚛️" },
+  { name: "EPQ", icon: "📝" },
 ];
 
 const EducationSection = () => {
@@ -30,10 +30,10 @@ const EducationSection = () => {
               Current School
             </h3>
             <p className="text-muted-foreground mb-4">
-              Your School Name
+              The Skinners' School
             </p>
             <p className="text-sm text-muted-foreground">
-              Grade/Year • 2023-2024
+              Year 12 • 2020-2027
             </p>
           </div>
 
