@@ -36,6 +36,12 @@ const CurrentFocusSection = () => {
                 <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                   Science
                 </span>
+                <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">
+                  Competitions
+                </span>
+                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full">
+                  Volunteering
+                </span>
               </div>
               
               <Link 
