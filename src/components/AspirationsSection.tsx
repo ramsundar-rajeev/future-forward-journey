@@ -36,7 +36,7 @@ const AspirationsSection = () => {
             <div className="mt-8 pt-6 border-t border-border flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-accent" />
               <p className="text-sm text-primary font-medium italic">
-                "The future belongs to those who believe in the beauty of their dreams."
+                "Somewhere, something incredible is waiting to be known."
               </p>
             </div>
           </div>
