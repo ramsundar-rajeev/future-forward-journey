@@ -1,15 +1,47 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, Award } from "lucide-react";
+import { Calendar, Music, GraduationCap, Mountain, Store, Code } from "lucide-react";
 
 const experiences = [
   {
     id: 1,
-    title: "Activity Title",
-    date: "Date",
-    description: "Activity description goes here. This is where you can describe what the activity involved and what you learned from it.",
-    icon: Award,
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
+    title: "Piano Grade 5",
+    date: "12/2024",
+    description: "I prepared for and completed my Grade 5 piano examination, developing consistent practice habits and refining my technical accuracy and musical expression. Balancing piano alongside academic commitments strengthened my time management and perseverance, while performing under exam conditions improved my confidence and focus.",
+    icon: Music,
+    tags: ["Discipline", "Creativity", "Time Management"],
+  },
+  {
+    id: 2,
+    title: "GCSE Examinations",
+    date: "05–06/2025",
+    description: "I completed my GCSE examinations across a broad range of subjects, consolidating foundational knowledge and exam technique. The revision process improved my ability to plan long-term study, prioritise weaker areas, and perform under pressure. Key highlights being: 9s in Maths, Physics, Chemistry, Biology and an A in FSMQ (Add maths), as well as 8s in Computer Science and English Literature. This experience helped shape my academic interests and prepared me for the demands of A-level study.",
+    icon: GraduationCap,
+    tags: ["Academic Achievement", "Resilience", "Independent Learning"],
+  },
+  {
+    id: 3,
+    title: "Silver Duke of Edinburgh Award",
+    date: "07/2025",
+    description: "I completed the Silver Duke of Edinburgh Award, involving volunteering, physical activity, skill development, and a team expedition. This experience strengthened my teamwork, leadership, and problem-solving skills, particularly during the expedition where planning, communication, and adaptability were essential in challenging conditions.",
+    icon: Mountain,
+    tags: ["Leadership", "Teamwork", "Resilience"],
+  },
+  {
+    id: 4,
+    title: "Jewellery Shop Work Experience",
+    date: "08/2025",
+    description: "I worked in a jewellery shop, gaining experience in customer service, sales, and professional communication. I learned how to interact confidently with customers, handle responsibility, and maintain attention to detail when dealing with high-value items. This role improved my interpersonal skills and workplace professionalism.",
+    icon: Store,
+    tags: ["Customer Service", "Communication", "Responsibility"],
+  },
+  {
+    id: 5,
+    title: "50 Days of Python Bootcamp",
+    date: "06–12/2025",
+    description: "I completed a 50-day Python bootcamp, building a strong foundation in programming through daily practice and projects. I developed problem-solving skills, logical thinking, and familiarity with writing clean, efficient code. This experience reinforced my interest in computational thinking and its applications in science and technology.",
+    icon: Code,
+    tags: ["Python", "Problem Solving", "Computational Thinking"],
   },
 ];
 
