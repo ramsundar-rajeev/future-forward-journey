@@ -45,6 +45,34 @@ const experiences = [
   },
 ];
 
+const tagColors: Record<string, string> = {
+  // Skills & Personal Development
+  "Discipline": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Creativity": "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "Time Management": "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  "Resilience": "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300",
+  "Independent Learning": "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
+  
+  // Academic & Technical
+  "Academic Achievement": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Python": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300",
+  "Problem Solving": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300",
+  "Computational Thinking": "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300",
+  
+  // Leadership & Teamwork
+  "Leadership": "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+  "Teamwork": "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300",
+  
+  // Professional Skills
+  "Customer Service": "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300",
+  "Communication": "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
+  "Responsibility": "bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300",
+};
+
+const getTagColor = (tag: string) => {
+  return tagColors[tag] || "bg-secondary text-secondary-foreground";
+};
+
 const Activities = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -101,7 +129,7 @@ const Activities = () => {
                       {experience.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full"
+                          className={`px-3 py-1 text-sm rounded-full font-medium ${getTagColor(tag)}`}
                         >
                           {tag}
                         </span>
