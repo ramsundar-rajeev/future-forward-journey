@@ -1,41 +1,77 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, Award, Users, Beaker } from "lucide-react";
+import { Calendar, Music, GraduationCap, Mountain, Store, Code } from "lucide-react";
 
 const experiences = [
   {
     id: 1,
-    title: "Regional Science Competition",
-    date: "March 2024",
-    description: "Participated in the regional science fair presenting research on sustainable bio-plastics. Gained valuable experience in public speaking and scientific presentation.",
-    icon: Award,
-    tags: ["Science", "Competition", "Research"],
+    title: "Piano Grade 5",
+    date: "12/2024",
+    description: "I prepared for and completed my Grade 5 piano examination, developing consistent practice habits and refining my technical accuracy and musical expression. Balancing piano alongside academic commitments strengthened my time management and perseverance, while performing under exam conditions improved my confidence and focus.",
+    icon: Music,
+    tags: ["Discipline", "Creativity", "Time Management"],
   },
   {
     id: 2,
-    title: "School Science Club Leadership",
-    date: "September 2023 - Present",
-    description: "Elected as Vice President of the school science club. Organized weekly meetings, coordinated experiments, and mentored junior members.",
-    icon: Users,
-    tags: ["Leadership", "Mentoring", "Organization"],
+    title: "GCSE Examinations",
+    date: "05–06/2025",
+    description: "I completed my GCSE examinations across a broad range of subjects, consolidating foundational knowledge and exam technique. The revision process improved my ability to plan long-term study, prioritise weaker areas, and perform under pressure. Key highlights being: 9s in Maths, Physics, Chemistry, Biology and an A in FSMQ (Add maths), as well as 8s in Computer Science and English Literature. This experience helped shape my academic interests and prepared me for the demands of A-level study.",
+    icon: GraduationCap,
+    tags: ["Academic Achievement", "Resilience", "Independent Learning"],
   },
   {
     id: 3,
-    title: "Summer Biology Workshop",
-    date: "July 2023",
-    description: "Attended an intensive two-week biology workshop focusing on molecular biology techniques and laboratory practices.",
-    icon: Beaker,
-    tags: ["Biology", "Workshop", "Lab Skills"],
+    title: "Silver Duke of Edinburgh Award",
+    date: "07/2025",
+    description: "I completed the Silver Duke of Edinburgh Award, involving volunteering, physical activity, skill development, and a team expedition. This experience strengthened my teamwork, leadership, and problem-solving skills, particularly during the expedition where planning, communication, and adaptability were essential in challenging conditions.",
+    icon: Mountain,
+    tags: ["Leadership", "Teamwork", "Resilience"],
   },
   {
     id: 4,
-    title: "Community Environmental Initiative",
-    date: "June 2023",
-    description: "Volunteered in a local environmental cleanup and awareness campaign. Helped educate community members about sustainable practices.",
-    icon: Users,
-    tags: ["Volunteering", "Environment", "Community"],
+    title: "Jewellery Shop Work Experience",
+    date: "08/2025",
+    description: "I worked in a jewellery shop, gaining experience in customer service, sales, and professional communication. I learned how to interact confidently with customers, handle responsibility, and maintain attention to detail when dealing with high-value items. This role improved my interpersonal skills and workplace professionalism.",
+    icon: Store,
+    tags: ["Customer Service", "Communication", "Responsibility"],
+  },
+  {
+    id: 5,
+    title: "50 Days of Python Bootcamp",
+    date: "06–12/2025",
+    description: "I completed a 50-day Python bootcamp, building a strong foundation in programming through daily practice and projects. I developed problem-solving skills, logical thinking, and familiarity with writing clean, efficient code. This experience reinforced my interest in computational thinking and its applications in science and technology.",
+    icon: Code,
+    tags: ["Python", "Problem Solving", "Computational Thinking"],
   },
 ];
+
+const tagColors: Record<string, string> = {
+  // Skills & Personal Development
+  "Discipline": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Creativity": "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "Time Management": "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  "Resilience": "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300",
+  "Independent Learning": "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
+  
+  // Academic & Technical
+  "Academic Achievement": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Python": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300",
+  "Problem Solving": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300",
+  "Computational Thinking": "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300",
+  
+  // Leadership & Teamwork
+  "Leadership": "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+  "Teamwork": "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300",
+  
+  // Professional Skills
+  "Customer Service": "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300",
+  "Communication": "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
+  "Responsibility": "bg-lime-100 text-lime-700 dark:bg-lime-900/30 dark:text-lime-300",
+};
+
+const getTagColor = (tag: string) => {
+  return tagColors[tag] || "bg-secondary text-secondary-foreground";
+};
 
 const Activities = () => {
   return (
@@ -93,7 +129,7 @@ const Activities = () => {
                       {experience.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full"
+                          className={`px-3 py-1 text-sm rounded-full font-medium ${getTagColor(tag)}`}
                         >
                           {tag}
                         </span>
