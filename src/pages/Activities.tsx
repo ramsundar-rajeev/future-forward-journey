@@ -68,7 +68,7 @@ const experiences = [
   },
   {
     id: 8,
-    title: "Water Treatment Plant Visit",
+    title: "Water Treatment Plant Visit (India)",
     date: "07/2025",
     sortDate: new Date(2025, 6),
     description: "I visited a water treatment plant to observe the full process of water purification, from initial intake to final distribution and packaging. This visit helped me understand large-scale filtration, chemical treatment, and quality control, highlighting the role of science and engineering in public health and sustainability.",
@@ -77,7 +77,7 @@ const experiences = [
   },
   {
     id: 9,
-    title: "Jewellery Shop Work Experience",
+    title: "Jewellery Shop Work Experience (India)",
     date: "08/2025",
     sortDate: new Date(2025, 7),
     description: "I worked in a jewellery shop, gaining experience in customer service, sales, and professional communication. I learned how to interact confidently with customers, handle responsibility, and maintain attention to detail when dealing with high-value items. This role improved my interpersonal skills and workplace professionalism.",
