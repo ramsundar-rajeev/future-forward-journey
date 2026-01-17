@@ -24,8 +24,8 @@ const experiences = [
   {
     id: 3,
     title: "No-Code Hackathon",
-    date: "01/2025",
-    sortDate: new Date(2025, 0),
+    date: "01/2026",
+    sortDate: new Date(2026, 0),
     description: "I attended a no-code hackathon where I collaborated in a team to design and prototype a functional digital solution within a limited timeframe. Contributing through prompt engineering, ideation, and design strengthened my rapid problem-solving skills and my understanding of product development under time pressure.",
     icon: Lightbulb,
     tags: ["Innovation", "Collaboration", "Rapid Prototyping"],
@@ -93,7 +93,7 @@ const experiences = [
     icon: Trophy,
     tags: ["Consistency", "Strategy", "Team Performance"],
   },
-].sort((a, b) => b.sortDate.getTime() - a.sortDate.getTime());
+].sort((a, b) => a.sortDate.getTime() - b.sortDate.getTime());
 
 const tagColors: Record<string, string> = {
   // Skills & Personal Development
